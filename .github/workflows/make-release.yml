@@ -22,7 +22,7 @@ jobs:
       - name: Run ShellCheck
         uses: ludeeus/action-shellcheck@master
         env:
-          SHELLCHECK_OPTS: -P apple-tools -x mk-bitsy.sh
+          SHELLCHECK_OPTS: -P apple-tools -x apple-tools/mk-bitsy.sh
 
       - uses: montudor/action-zip@v1
         with:
