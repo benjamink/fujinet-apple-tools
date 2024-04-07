@@ -59,7 +59,7 @@ fi
 
 if [ $LOADER -eq 1 ]; then 
   ${AC} -d "$DISKFILE" QUIT.SYSTEM
-  ${AC} -p "$DISKFILE" "$NAME".SYSTEM sys < "`cl65 --print-target-path`/apple2/util/loader.system"
+  ${AC} -p "$DISKFILE" "$NAME".SYSTEM sys < "$(cl65 --print-target-path)/apple2/util/loader.system"
 fi
 
 ${AC} -as "$DISKFILE" "$NAME" < "$INFILE"
